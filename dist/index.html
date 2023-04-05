@@ -3,14 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Icecrema</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="wrapper">
-      <header class="header"><h1>Hello</h1></header>
-      <main class="main"></main>
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="logo" />
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Home</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">How it’s made?</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Our products</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__btn">
+              By now<svg
+                class="btn__arrow"
+                width="7"
+                height="10"
+                viewBox="0 0 7 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.96959 0.226914C0.828987 0.36756 0.75 0.558291 0.75 0.757164C0.75 0.956037 0.828987 1.14677 0.96959 1.28741L4.68209 4.99991L0.96959 8.71241C0.832971 8.85387 0.757375 9.04332 0.759084 9.23997C0.760793 9.43661 0.83967 9.62472 0.978726 9.76378C1.11778 9.90283 1.30589 9.98171 1.50254 9.98342C1.69919 9.98513 1.88864 9.90953 2.03009 9.77291L6.27284 5.53016C6.41344 5.38952 6.49243 5.19879 6.49243 4.99991C6.49243 4.80104 6.41344 4.61031 6.27284 4.46966L2.03009 0.226914C1.88944 0.0863108 1.69871 0.00732422 1.49984 0.00732422C1.30097 0.00732422 1.11024 0.0863108 0.96959 0.226914Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="offer">
+          <div class="container">
+            <div class="offer__top">
+              <div class="offer__title">
+                <h1 class="title">ice cream made with <span>passion</span></h1>
+                <a class="products-link" href="#">Products</a>
+                <a class="made-link" href="#">How it’s made?</a>
+              </div>
+              <div class="offer__statistic">
+                <b>16<span>cafes</span></b>
+                <b>23<span>food trucks</span></b>
+              </div>
+            </div>
+            <div class="offer__bottom">
+              <img src="images/more-icecream.png" alt="ice cream" />
+              <div class="offer__text">
+                <p>
+                  Indulge in a scoop of ice cream made with passion and treat
+                  your taste buds to an unforgettable experience!
+                  <a href="#">
+                    <svg
+                      width="41"
+                      height="16"
+                      viewBox="0 0 41 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+                        fill="#FCFCFC"
+                      />
+                    </svg>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <img class="desktop-bg" src="images/desktop-bg.png" alt="ica cream">
+          </div>
+        </section>
+      </main>
       <footer class="footer"></footer>
     </div>
 
