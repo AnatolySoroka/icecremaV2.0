@@ -190,7 +190,7 @@
 
 .products {
   padding: 60px 0;
-  background-image: url('../images/product-bg-desktop.png');
+  background-image: url("../images/product-bg-desktop.png");
 }
 
 .products__title {
@@ -285,4 +285,123 @@
 .product__description {
   text-align: center;
   flex-grow: 1;
+}
+
+// ABOUT SECTION
+
+.about {
+  background-color: $bgColor;
+  padding: 60px 0 178px;
+  &__title {
+    font-family: "Seymour One";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    margin: 12px 0 82px;
+  }
+  &__subtitle {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+  }
+  &__wrapper-img {
+    background-color: #f8d24eb2;
+    max-width: 490px;
+    border-radius: 50%;
+  }
+  &__img {
+    transform: translateY(40px);
+  }
+}
+
+.about__content {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+}
+
+.about__description {
+  max-width: 463px;
+  color: #fcfcfc;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  margin-left: 109px;
+}
+
+.about__text:not(:first-child) {
+  font-size: 14px;
+  line-height: 194%;
+  margin-top: 8px;
+}
+
+.about__btn {
+  background-color: $yellow;
+  border-radius: 10px;
+  padding: 12px 10px;
+  min-width: 164px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  margin-top: 54px;
+  .btn__arrow {
+    margin-left: 8px;
+  }
+  &:hover {
+    background-color: $green;
+  }
+  &:focus {
+    color: #fcfcfc;
+  }
+  &:disabled {
+    background-color: $disabled;
+  }
+  &:focus path {
+    fill: #fcfcfc;
+  }
+}
+
+.about__items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  gap: 32px 10px;
+}
+.about__item {
+  text-align: center;
+  max-width: 368px;
+  img {
+    background-color: $yellow;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 0 auto;
+  }
+  b {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 71px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    margin: 40px 0 12px;
+    display: block;
+  }
+  p {
+    font-size: 16px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fcfcfc;
+  }
 }
