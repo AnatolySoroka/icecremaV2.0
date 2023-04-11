@@ -468,3 +468,144 @@
 .swiper-pagination-bullet-active {
   background-color: $bgColor;
 }
+
+// ADDRESS SECTION
+
+.address {
+  background-color: $bgColor;
+  padding-bottom: 60px;
+}
+
+.address__cards {
+  transform: translateY(-100px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 10px;
+}
+
+.address__card-item {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 40px 40px 0;
+  max-width: 368px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.address__card-title {
+  background-color: $yellow;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 14px;
+}
+
+.address__card-section:not(:last-child) {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.address__card-inner {
+  display: grid;
+  grid-template-rows: auto 1fr 0.5fr;
+}
+
+.address__card-section {
+  padding: 32px 0;
+}
+
+.address__card-section p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+.address__card-section p span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: #ababab;
+  display: block;
+}
+
+.address__card-section:first-child {
+  a {
+    color: #d6936d;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+  }
+  p {
+    margin-bottom: 8px;
+  }
+}
+
+.address__card-section:last-child {
+  a {
+    margin: 2px 0;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #131313;
+  }
+}
+
+.address__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0 16px;
+}
+
+.location__btn {
+  background-color: $yellow;
+  &:hover {
+    background-color: $green;
+  }
+  &:focus {
+    color: #fcfcfc;
+  }
+  &:focus path {
+    fill: #fcfcfc;
+  }
+  &:disabled {
+    background-color: $disabled;
+  }
+}
+
+.franchise__btn {
+  border: 1px solid $yellow;
+  &:hover {
+    border-color: $green;
+  }
+  &:focus {
+    color: #fcfcfc;
+  }
+  &:focus path {
+    fill: #fcfcfc;
+  }
+  &:disabled {
+    border-color: $disabled;
+  }
+}
+
+.location__btn,
+.franchise__btn {
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #131313;
+  padding: 12px;
+  min-width: 196px;
+  svg {
+    margin-left: 7px;
+  }
+}
