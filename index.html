@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Icecrema</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
@@ -184,11 +185,53 @@
           </div>
         </div>
       </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="swiper">
+            <div class="reviews__slider swiper-wrapper">
+              <div class="reviews__slider-item swiper-slide">
+                <img class="slider-img" src="images/reviews-product1.png" alt="ice cream">
+                <div class="reviews__user">
+                  <img class="reviews__user-img" src="images/user-reviews1.png" alt="avatar">
+                  <p class="reviews__user-text">I love visiting your cafe. You prepare the most delicious ice cream in
+                    Los
+                    Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.
+                  </p>
+                  <p class="reviews__user-info">Emily, Los Angeles</p>
+                </div>
+              </div>
+              <div class="reviews__slider-item swiper-slide">
+                <img class="slider-img" src="images/reviews-product2.png" alt="ice cream">
+                <div class="reviews__user">
+                  <img class="reviews__user-img" src="images/user-reviews2.png" alt="avatar">
+                  <p class="reviews__user-text">I love visiting your cafe. You prepare the most delicious ice cream in
+                    Los
+                    Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.
+                  </p>
+                  <p class="reviews__user-info">Emily, Los Angeles</p>
+                </div>
+              </div>
+              <div class="reviews__slider-item swiper-slide">
+                <img class="slider-img" src="images/reviews-product3.png" alt="ice cream">
+                <div class="reviews__user">
+                  <img class="reviews__user-img" src="images/user-reviews3.png" alt="avatar">
+                  <p class="reviews__user-text">I love visiting your cafe. You prepare the most delicious ice cream in
+                    Los
+                    Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.
+                  </p>
+                  <p class="reviews__user-info">Emily, Los Angeles</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer"></footer>
   </div>
 
-  <script src="js/main.min.js"></script>
+  <script src="js/main.min.js" type="module"></script>
 </body>
 
 </html>
