@@ -409,6 +409,7 @@
 // REVIEWS SECTION
 
 .reviews {
+  padding-bottom: 228px;
   background-image: url("../images/product-bg-desktop.png");
   background-size: auto;
 }
@@ -430,15 +431,17 @@
 }
 
 .reviews__user-text {
-  margin: 32px 0;
+  margin: 32px auto;
   background-color: $bgColor;
   border-radius: 24px;
-  padding: 43px 109px;
+  padding: 43px 74px;
   font-weight: 500;
   font-size: 16px;
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #fcfcfc;
+  max-width: 968px;
+  display: block;
 }
 
 .reviews__user-info {
@@ -446,4 +449,22 @@
   font-size: 16px;
   line-height: 186%;
   color: #131313;
+}
+
+.swiper {
+  margin-top: -100px;
+  padding-bottom: 44px;
+}
+
+.swiper-pagination {
+  bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $bgColor;
 }
