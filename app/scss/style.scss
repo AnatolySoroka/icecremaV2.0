@@ -405,3 +405,45 @@
     color: #fcfcfc;
   }
 }
+
+// REVIEWS SECTION
+
+.reviews {
+  background-image: url("../images/product-bg-desktop.png");
+  background-size: auto;
+}
+
+.reviews__slider-item {
+  text-align: center;
+}
+
+.reviews__user {
+  margin-top: 140px;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.slider-img,
+.reviews__user-img {
+  margin: 0 auto;
+}
+
+.reviews__user-text {
+  margin: 32px 0;
+  background-color: $bgColor;
+  border-radius: 24px;
+  padding: 43px 109px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+}
+
+.reviews__user-info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: #131313;
+}
