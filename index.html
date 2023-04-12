@@ -1,522 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Icecrema</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <header class="header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Icecrema</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <div id="byNowModal" class="backdrop-modal">
+    <div class="modal">
+      <div class="modal__content">
+        <button class="close__btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_10674_17412)">
+              <path
+                d="M12.9398 12L18.4665 6.47329C18.5757 6.34576 18.6328 6.18171 18.6263 6.01393C18.6198 5.84614 18.5503 5.68698 18.4315 5.56825C18.3128 5.44952 18.1536 5.37997 17.9859 5.37349C17.8181 5.36701 17.654 5.42408 17.5265 5.53329L11.9998 11.06L6.47315 5.52663C6.34762 5.40109 6.17735 5.33057 5.99982 5.33057C5.82228 5.33057 5.65202 5.40109 5.52649 5.52663C5.40095 5.65216 5.33042 5.82243 5.33042 5.99996C5.33042 6.1775 5.40095 6.34776 5.52649 6.47329L11.0598 12L5.52649 17.5266C5.4567 17.5864 5.40002 17.6599 5.36 17.7426C5.31999 17.8254 5.2975 17.9154 5.29395 18.0073C5.29041 18.0991 5.30588 18.1906 5.33939 18.2762C5.37291 18.3617 5.42375 18.4394 5.48872 18.5044C5.55369 18.5694 5.63139 18.6202 5.71694 18.6537C5.80249 18.6872 5.89404 18.7027 5.98585 18.6992C6.07767 18.6956 6.16776 18.6731 6.25047 18.6331C6.33318 18.5931 6.40672 18.5364 6.46649 18.4666L11.9998 12.94L17.5265 18.4666C17.654 18.5758 17.8181 18.6329 17.9859 18.6264C18.1536 18.62 18.3128 18.5504 18.4315 18.4317C18.5503 18.3129 18.6198 18.1538 18.6263 17.986C18.6328 17.8182 18.5757 17.6542 18.4665 17.5266L12.9398 12Z"
+                fill="#131313" />
+            </g>
+            <defs>
+              <clipPath id="clip0_10674_17412">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <h5 class="modal__title">Buy now</h5>
+        <div class="byNowModal__items">
+          <div class="byNowModal__item">
+            <div class="byNowModal__wrapper">
+              <img src="images/product-item1-small.png" alt="ice cream">
+            </div>
+            <h6 class="byNowModal__item-title">ice cream</h6>
+          </div>
+          <div class="byNowModal__item">
+            <div class="byNowModal__wrapper">
+              <img src="images/product-item2-small.png" alt="ice cream">
+            </div>
+            <h6 class="byNowModal__item-title">ice coffee</h6>
+          </div>
+          <div class="byNowModal__item">
+            <div class="byNowModal__wrapper">
+              <img src="images/product-item3-small.png" alt="ice cream">
+            </div>
+            <h6 class="byNowModal__item-title">milkshake</h6>
+          </div>
+        </div>
+        <form class="form">
+          <input type="text" placeholder="Name">
+          <input type="tel" placeholder="Phone">
+          <textarea name="" id="" cols="30" rows="3" placeholder="Comment"></textarea>
+          <input class="form__btn" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Home</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">How it’s made?</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Our products</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__btn">
+            By now<svg class="btn__arrow" width="7" height="10" viewBox="0 0 7 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.96959 0.226914C0.828987 0.36756 0.75 0.558291 0.75 0.757164C0.75 0.956037 0.828987 1.14677 0.96959 1.28741L4.68209 4.99991L0.96959 8.71241C0.832971 8.85387 0.757375 9.04332 0.759084 9.23997C0.760793 9.43661 0.83967 9.62472 0.978726 9.76378C1.11778 9.90283 1.30589 9.98171 1.50254 9.98342C1.69919 9.98513 1.88864 9.90953 2.03009 9.77291L6.27284 5.53016C6.41344 5.38952 6.49243 5.19879 6.49243 4.99991C6.49243 4.80104 6.41344 4.61031 6.27284 4.46966L2.03009 0.226914C1.88944 0.0863108 1.69871 0.00732422 1.49984 0.00732422C1.30097 0.00732422 1.11024 0.0863108 0.96959 0.226914Z"
+                fill="black" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="offer">
         <div class="container">
-          <div class="header__inner">
-            <a class="header__logo" href="#">
-              <img class="logo__img" src="images/logo.svg" alt="logo" />
-            </a>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Home</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">How it’s made?</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Our products</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="header__btn">
-              By now<svg
-                class="btn__arrow"
-                width="7"
-                height="10"
-                viewBox="0 0 7 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+          <div class="offer__top">
+            <div class="offer__title">
+              <h1 class="title">ice cream made with <span>passion</span></h1>
+              <a class="products-link" href="#">Products</a>
+              <a class="made-link" href="#">How it’s made?</a>
+            </div>
+            <div class="offer__statistic">
+              <b>16<span>cafes</span></b>
+              <b>23<span>food trucks</span></b>
+            </div>
+          </div>
+          <div class="offer__bottom">
+            <img src="images/more-icecream.png" alt="ice cream" />
+            <div class="offer__text">
+              <p>
+                Indulge in a scoop of ice cream made with passion and treat
+                your taste buds to an unforgettable experience!
+                <a href="#">
+                  <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+                      fill="#FCFCFC" />
+                  </svg>
+                </a>
+              </p>
+            </div>
+          </div>
+          <img class="desktop-bg" src="images/desktop-bg.png" alt="ica cream" />
+        </div>
+      </section>
+      <section class="products">
+        <div class="container">
+          <p class="products__subtitle">100% natural</p>
+          <h2 class="products__title">products</h2>
+          <div class="products__items">
+            <div class="product__item">
+              <div class="product__wrapper-img">
+                <img class="product__img" src="images/product-item1.png" alt="ice" />
+              </div>
+              <h4 class="product__title">ice cream</h4>
+              <p class="product__description">
+                Soft ice cream with a delicate taste. Made with milk, cream,
+                sugar and natural stabilizer
+              </p>
+              <button class="product__btn">
+                <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+                    fill="#000000" />
+                </svg>
+              </button>
+            </div>
+            <div class="product__item">
+              <div class="product__wrapper-img">
+                <img class="product__img" src="images/product-item2.png" alt="ice" />
+              </div>
+              <h4 class="product__title">ice coffee</h4>
+              <p class="product__description">
+                Fragrant invigorating drink created from 100% natural
+                ingredients without the use of preservatives and flavor
+                enhancers
+              </p>
+              <button class="product__btn">
+                <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+                    fill="#000000" />
+                </svg>
+              </button>
+            </div>
+            <div class="product__item">
+              <div class="product__wrapper-img">
+                <img class="product__img" src="images/product-item3.png" alt="ice" />
+              </div>
+              <h4 class="product__title">milkshakes</h4>
+              <p class="product__description">
+                Sweet drinks based on milk and ice cream, supplemented with
+                syrups, fruits, berries and other sweets of your choice
+              </p>
+              <button class="product__btn">
+                <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+                    fill="#000000" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <p class="about__subtitle">tradition and love</p>
+          <h2 class="about__title">how it’s made?</h2>
+          <div class="about__content">
+            <div class="about__wrapper-img">
+              <img class="about__img" src="images/about-img.png" alt="cow" />
+            </div>
+            <div class="about__description">
+              <p class="about__text">
+                Ice is a place where you will become not only a little
+                happier, but also healthier. Health is the main value for us,
+                and we follow it when creating our handmade desserts.
+              </p>
+              <p class="about__text">
+                We use traditional recipes and 100% natural ingredients. Our
+                products are so natural that they can be given to children
+                from the age of three years. Sweets lovers can expect 55 types
+                of ice cream, 15 types of coffee and 23 milkshakes.
+              </p>
+              <p class="about__text">
+                This is enough to choose ice cream and coffee for any mood!
+              </p>
+              <button class="about__btn">
+                Read more<svg class="btn__arrow" width="7" height="10" viewBox="0 0 7 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.96959 0.226914C0.828987 0.36756 0.75 0.558291 0.75 0.757164C0.75 0.956037 0.828987 1.14677 0.96959 1.28741L4.68209 4.99991L0.96959 8.71241C0.832971 8.85387 0.757375 9.04332 0.759084 9.23997C0.760793 9.43661 0.83967 9.62472 0.978726 9.76378C1.11778 9.90283 1.30589 9.98171 1.50254 9.98342C1.69919 9.98513 1.88864 9.90953 2.03009 9.77291L6.27284 5.53016C6.41344 5.38952 6.49243 5.19879 6.49243 4.99991C6.49243 4.80104 6.41344 4.61031 6.27284 4.46966L2.03009 0.226914C1.88944 0.0863108 1.69871 0.00732422 1.49984 0.00732422C1.30097 0.00732422 1.11024 0.0863108 0.96959 0.226914Z"
+                    fill="black" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="about__items">
+            <div class="about__item">
+              <img src="images/cow.svg" alt="cow icon" />
+              <b>721</b>
+              <p>
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </div>
+            <div class="about__item">
+              <img src="images/weight.svg" alt="weight icon" />
+              <b>16kg</b>
+              <p>
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </div>
+            <div class="about__item">
+              <img src="images/ice-crema.svg" alt="ice cream icon" />
+              <b>84</b>
+              <p>
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="swiper">
+            <div class="reviews__slider swiper-wrapper">
+              <div class="reviews__slider-item swiper-slide">
+                <img class="slider-img" src="images/reviews-product1.png" alt="ice cream" />
+                <div class="reviews__user">
+                  <img class="reviews__user-img" src="images/user-reviews1.png" alt="avatar" />
+                  <p class="reviews__user-text">
+                    I love visiting your cafe. You prepare the most delicious
+                    ice cream in Los Angeles! In addition, you have beautiful
+                    serving, cozy atmosphere and polite staff.
+                  </p>
+                  <p class="reviews__user-info">Emily, Los Angeles</p>
+                </div>
+              </div>
+              <div class="reviews__slider-item swiper-slide">
+                <img class="slider-img" src="images/reviews-product2.png" alt="ice cream" />
+                <div class="reviews__user">
+                  <img class="reviews__user-img" src="images/user-reviews2.png" alt="avatar" />
+                  <p class="reviews__user-text">
+                    I love visiting your cafe. You prepare the most delicious
+                    ice cream in Los Angeles! In addition, you have beautiful
+                    serving, cozy atmosphere and polite staff.
+                  </p>
+                  <p class="reviews__user-info">Emily, Los Angeles</p>
+                </div>
+              </div>
+              <div class="reviews__slider-item swiper-slide">
+                <img class="slider-img" src="images/reviews-product3.png" alt="ice cream" />
+                <div class="reviews__user">
+                  <img class="reviews__user-img" src="images/user-reviews3.png" alt="avatar" />
+                  <p class="reviews__user-text">
+                    I love visiting your cafe. You prepare the most delicious
+                    ice cream in Los Angeles! In addition, you have beautiful
+                    serving, cozy atmosphere and polite staff.
+                  </p>
+                  <p class="reviews__user-info">Emily, Los Angeles</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="address">
+        <div class="container">
+          <div class="address__cards">
+            <div class="address__card-item">
+              <h6 class="address__card-title">CAFE</h6>
+              <div class="address__card-inner">
+                <div class="address__card-section">
+                  <p>Chicago</p>
+                  <a href="#">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
+                </div>
+                <div class="address__card-section">
+                  <p>Monday - Friday<span>06:00 AM - 10:00 PM</span></p>
+                  <p>Saturday - Sunday<span>08:00 AM - 16:00 PM</span></p>
+                </div>
+                <div class="address__card-section">
+                  <a class="card__tel" href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
+                  <a class="card__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="address__card-item">
+              <h6 class="address__card-title">FOOD TRUCK</h6>
+              <div class="address__card-inner">
+                <div class="address__card-section">
+                  <p>Los Angeles</p>
+                  <a href="#">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
+                </div>
+                <div class="address__card-section">
+                  <p>Monday - Friday<span>06:00 AM - 10:00 PM</span></p>
+                  <p>Saturday - Sunday<span>08:00 AM - 16:00 PM</span></p>
+                </div>
+                <div class="address__card-section">
+                  <a class="card__tel" href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
+                  <a class="card__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="address__card-item">
+              <h6 class="address__card-title">CAFE</h6>
+              <div class="address__card-inner">
+                <div class="address__card-section">
+                  <p>New York</p>
+                  <a href="#">726 Sterling Pl, Brooklyn, NY 11222, USA</a>
+                </div>
+                <div class="address__card-section">
+                  <p>Monday - Friday<span>06:00 AM - 10:00 PM</span></p>
+                  <p>Saturday - Sunday<span>08:00 AM - 16:00 PM</span></p>
+                </div>
+                <div class="address__card-section">
+                  <a class="card__tel" href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
+                  <a class="card__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="address__buttons">
+            <button class="location__btn">
+              Our Locations<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.96959 0.226914C0.828987 0.36756 0.75 0.558291 0.75 0.757164C0.75 0.956037 0.828987 1.14677 0.96959 1.28741L4.68209 4.99991L0.96959 8.71241C0.832971 8.85387 0.757375 9.04332 0.759084 9.23997C0.760793 9.43661 0.83967 9.62472 0.978726 9.76378C1.11778 9.90283 1.30589 9.98171 1.50254 9.98342C1.69919 9.98513 1.88864 9.90953 2.03009 9.77291L6.27284 5.53016C6.41344 5.38952 6.49243 5.19879 6.49243 4.99991C6.49243 4.80104 6.41344 4.61031 6.27284 4.46966L2.03009 0.226914C1.88944 0.0863108 1.69871 0.00732422 1.49984 0.00732422C1.30097 0.00732422 1.11024 0.0863108 0.96959 0.226914Z"
-                  fill="black"
-                />
+                  fill="black" />
+              </svg>
+            </button>
+            <button class="franchise__btn">
+              Franchise<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.96959 0.226914C0.828987 0.36756 0.75 0.558291 0.75 0.757164C0.75 0.956037 0.828987 1.14677 0.96959 1.28741L4.68209 4.99991L0.96959 8.71241C0.832971 8.85387 0.757375 9.04332 0.759084 9.23997C0.760793 9.43661 0.83967 9.62472 0.978726 9.76378C1.11778 9.90283 1.30589 9.98171 1.50254 9.98342C1.69919 9.98513 1.88864 9.90953 2.03009 9.77291L6.27284 5.53016C6.41344 5.38952 6.49243 5.19879 6.49243 4.99991C6.49243 4.80104 6.41344 4.61031 6.27284 4.46966L2.03009 0.226914C1.88944 0.0863108 1.69871 0.00732422 1.49984 0.00732422C1.30097 0.00732422 1.11024 0.0863108 0.96959 0.226914Z"
+                  fill="black" />
               </svg>
             </button>
           </div>
         </div>
-      </header>
-      <main class="main">
-        <section class="offer">
-          <div class="container">
-            <div class="offer__top">
-              <div class="offer__title">
-                <h1 class="title">ice cream made with <span>passion</span></h1>
-                <a class="products-link" href="#">Products</a>
-                <a class="made-link" href="#">How it’s made?</a>
-              </div>
-              <div class="offer__statistic">
-                <b>16<span>cafes</span></b>
-                <b>23<span>food trucks</span></b>
-              </div>
-            </div>
-            <div class="offer__bottom">
-              <img src="images/more-icecream.png" alt="ice cream" />
-              <div class="offer__text">
-                <p>
-                  Indulge in a scoop of ice cream made with passion and treat
-                  your taste buds to an unforgettable experience!
-                  <a href="#">
-                    <svg
-                      width="41"
-                      height="16"
-                      viewBox="0 0 41 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
-                        fill="#FCFCFC"
-                      />
-                    </svg>
-                  </a>
-                </p>
-              </div>
-            </div>
-            <img
-              class="desktop-bg"
-              src="images/desktop-bg.png"
-              alt="ica cream"
-            />
-          </div>
-        </section>
-        <section class="products">
-          <div class="container">
-            <p class="products__subtitle">100% natural</p>
-            <h2 class="products__title">products</h2>
-            <div class="products__items">
-              <div class="product__item">
-                <div class="product__wrapper-img">
-                  <img
-                    class="product__img"
-                    src="images/product-item1.png"
-                    alt="ice"
-                  />
-                </div>
-                <h4 class="product__title">ice cream</h4>
-                <p class="product__description">
-                  Soft ice cream with a delicate taste. Made with milk, cream,
-                  sugar and natural stabilizer
-                </p>
-                <button class="product__btn">
-                  <svg
-                    width="41"
-                    height="16"
-                    viewBox="0 0 41 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
-                      fill="#000000"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div class="product__item">
-                <div class="product__wrapper-img">
-                  <img
-                    class="product__img"
-                    src="images/product-item2.png"
-                    alt="ice"
-                  />
-                </div>
-                <h4 class="product__title">ice coffee</h4>
-                <p class="product__description">
-                  Fragrant invigorating drink created from 100% natural
-                  ingredients without the use of preservatives and flavor
-                  enhancers
-                </p>
-                <button class="product__btn">
-                  <svg
-                    width="41"
-                    height="16"
-                    viewBox="0 0 41 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
-                      fill="#000000"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div class="product__item">
-                <div class="product__wrapper-img">
-                  <img
-                    class="product__img"
-                    src="images/product-item3.png"
-                    alt="ice"
-                  />
-                </div>
-                <h4 class="product__title">milkshakes</h4>
-                <p class="product__description">
-                  Sweet drinks based on milk and ice cream, supplemented with
-                  syrups, fruits, berries and other sweets of your choice
-                </p>
-                <button class="product__btn">
-                  <svg
-                    width="41"
-                    height="16"
-                    viewBox="0 0 41 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
-                      fill="#000000"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="about">
-          <div class="container">
-            <p class="about__subtitle">tradition and love</p>
-            <h2 class="about__title">how it’s made?</h2>
-            <div class="about__content">
-              <div class="about__wrapper-img">
-                <img class="about__img" src="images/about-img.png" alt="cow" />
-              </div>
-              <div class="about__description">
-                <p class="about__text">
-                  Ice is a place where you will become not only a little
-                  happier, but also healthier. Health is the main value for us,
-                  and we follow it when creating our handmade desserts.
-                </p>
-                <p class="about__text">
-                  We use traditional recipes and 100% natural ingredients. Our
-                  products are so natural that they can be given to children
-                  from the age of three years. Sweets lovers can expect 55 types
-                  of ice cream, 15 types of coffee and 23 milkshakes.
-                </p>
-                <p class="about__text">
-                  This is enough to choose ice cream and coffee for any mood!
-                </p>
-                <button class="about__btn">
-                  Read more<svg
-                    class="btn__arrow"
-                    width="7"
-                    height="10"
-                    viewBox="0 0 7 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.96959 0.226914C0.828987 0.36756 0.75 0.558291 0.75 0.757164C0.75 0.956037 0.828987 1.14677 0.96959 1.28741L4.68209 4.99991L0.96959 8.71241C0.832971 8.85387 0.757375 9.04332 0.759084 9.23997C0.760793 9.43661 0.83967 9.62472 0.978726 9.76378C1.11778 9.90283 1.30589 9.98171 1.50254 9.98342C1.69919 9.98513 1.88864 9.90953 2.03009 9.77291L6.27284 5.53016C6.41344 5.38952 6.49243 5.19879 6.49243 4.99991C6.49243 4.80104 6.41344 4.61031 6.27284 4.46966L2.03009 0.226914C1.88944 0.0863108 1.69871 0.00732422 1.49984 0.00732422C1.30097 0.00732422 1.11024 0.0863108 0.96959 0.226914Z"
-                      fill="black"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="about__items">
-              <div class="about__item">
-                <img src="images/cow.svg" alt="cow icon" />
-                <b>721</b>
-                <p>
-                  Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-                </p>
-              </div>
-              <div class="about__item">
-                <img src="images/weight.svg" alt="weight icon" />
-                <b>16kg</b>
-                <p>
-                  Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-                </p>
-              </div>
-              <div class="about__item">
-                <img src="images/ice-crema.svg" alt="ice cream icon" />
-                <b>84</b>
-                <p>
-                  Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="reviews">
-          <div class="container">
-            <div class="swiper">
-              <div class="reviews__slider swiper-wrapper">
-                <div class="reviews__slider-item swiper-slide">
-                  <img
-                    class="slider-img"
-                    src="images/reviews-product1.png"
-                    alt="ice cream"
-                  />
-                  <div class="reviews__user">
-                    <img
-                      class="reviews__user-img"
-                      src="images/user-reviews1.png"
-                      alt="avatar"
-                    />
-                    <p class="reviews__user-text">
-                      I love visiting your cafe. You prepare the most delicious
-                      ice cream in Los Angeles! In addition, you have beautiful
-                      serving, cozy atmosphere and polite staff.
-                    </p>
-                    <p class="reviews__user-info">Emily, Los Angeles</p>
-                  </div>
-                </div>
-                <div class="reviews__slider-item swiper-slide">
-                  <img
-                    class="slider-img"
-                    src="images/reviews-product2.png"
-                    alt="ice cream"
-                  />
-                  <div class="reviews__user">
-                    <img
-                      class="reviews__user-img"
-                      src="images/user-reviews2.png"
-                      alt="avatar"
-                    />
-                    <p class="reviews__user-text">
-                      I love visiting your cafe. You prepare the most delicious
-                      ice cream in Los Angeles! In addition, you have beautiful
-                      serving, cozy atmosphere and polite staff.
-                    </p>
-                    <p class="reviews__user-info">Emily, Los Angeles</p>
-                  </div>
-                </div>
-                <div class="reviews__slider-item swiper-slide">
-                  <img
-                    class="slider-img"
-                    src="images/reviews-product3.png"
-                    alt="ice cream"
-                  />
-                  <div class="reviews__user">
-                    <img
-                      class="reviews__user-img"
-                      src="images/user-reviews3.png"
-                      alt="avatar"
-                    />
-                    <p class="reviews__user-text">
-                      I love visiting your cafe. You prepare the most delicious
-                      ice cream in Los Angeles! In addition, you have beautiful
-                      serving, cozy atmosphere and polite staff.
-                    </p>
-                    <p class="reviews__user-info">Emily, Los Angeles</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-        <section class="address">
-          <div class="container">
-            <div class="address__cards">
-              <div class="address__card-item">
-                <h6 class="address__card-title">CAFE</h6>
-                <div class="address__card-inner">
-                  <div class="address__card-section">
-                    <p>Chicago</p>
-                    <a href="#"
-                      >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
-                    >
-                  </div>
-                  <div class="address__card-section">
-                    <p>Monday - Friday<span>06:00 AM - 10:00 PM</span></p>
-                    <p>Saturday - Sunday<span>08:00 AM - 16:00 PM</span></p>
-                  </div>
-                  <div class="address__card-section">
-                    <a class="card__tel" href="tel:+61(0) 383 766 284"
-                      >+61(0) 383 766 284</a
-                    >
-                    <a class="card__mail" href="mailto:noreply@envato.com"
-                      >noreply@envato.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="address__card-item">
-                <h6 class="address__card-title">FOOD TRUCK</h6>
-                <div class="address__card-inner">
-                  <div class="address__card-section">
-                    <p>Los Angeles</p>
-                    <a href="#"
-                      >1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a
-                    >
-                  </div>
-                  <div class="address__card-section">
-                    <p>Monday - Friday<span>06:00 AM - 10:00 PM</span></p>
-                    <p>Saturday - Sunday<span>08:00 AM - 16:00 PM</span></p>
-                  </div>
-                  <div class="address__card-section">
-                    <a class="card__tel" href="tel:+61(0) 383 766 284"
-                      >+61(0) 383 766 284</a
-                    >
-                    <a class="card__mail" href="mailto:noreply@envato.com"
-                      >noreply@envato.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="address__card-item">
-                <h6 class="address__card-title">CAFE</h6>
-                <div class="address__card-inner">
-                  <div class="address__card-section">
-                    <p>New York</p>
-                    <a href="#">726 Sterling Pl, Brooklyn, NY 11222, USA</a>
-                  </div>
-                  <div class="address__card-section">
-                    <p>Monday - Friday<span>06:00 AM - 10:00 PM</span></p>
-                    <p>Saturday - Sunday<span>08:00 AM - 16:00 PM</span></p>
-                  </div>
-                  <div class="address__card-section">
-                    <a class="card__tel" href="tel:+61(0) 383 766 284"
-                      >+61(0) 383 766 284</a
-                    >
-                    <a class="card__mail" href="mailto:noreply@envato.com"
-                      >noreply@envato.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="address__buttons">
-              <button class="location__btn">
-                Our Locations<svg
-                  width="7"
-                  height="10"
-                  viewBox="0 0 7 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <h2 class="footer__title">
+            homemade ice cream made <span>with passion</span>
+          </h2>
+          <div class="footer__contact">
+            <div class="footer__social-icons">
+              <a href="#">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17" cy="17" r="17" fill="#F8D24E" />
                   <path
-                    d="M0.96959 0.226914C0.828987 0.36756 0.75 0.558291 0.75 0.757164C0.75 0.956037 0.828987 1.14677 0.96959 1.28741L4.68209 4.99991L0.96959 8.71241C0.832971 8.85387 0.757375 9.04332 0.759084 9.23997C0.760793 9.43661 0.83967 9.62472 0.978726 9.76378C1.11778 9.90283 1.30589 9.98171 1.50254 9.98342C1.69919 9.98513 1.88864 9.90953 2.03009 9.77291L6.27284 5.53016C6.41344 5.38952 6.49243 5.19879 6.49243 4.99991C6.49243 4.80104 6.41344 4.61031 6.27284 4.46966L2.03009 0.226914C1.88944 0.0863108 1.69871 0.00732422 1.49984 0.00732422C1.30097 0.00732422 1.11024 0.0863108 0.96959 0.226914Z"
-                    fill="black"
-                  />
+                    d="M17 7C11.5074 7 7 11.5074 7 17C7 21.687 10.2889 25.9447 14.6562 27V23.6916C14.2235 23.7863 13.8253 23.7891 13.3847 23.6592C12.7938 23.4848 12.3136 23.0912 11.9571 22.4909C11.7299 22.1076 11.3272 21.6919 10.9072 21.7224L10.8042 20.5551C11.7125 20.4773 12.4984 21.1086 12.9648 21.8923C13.172 22.2408 13.4105 22.4451 13.7166 22.5354C14.0125 22.6226 14.3302 22.5807 14.7003 22.45C14.7933 21.7089 15.1328 21.4315 15.3893 21.0408V21.0402C12.7846 20.6517 11.7466 19.2699 11.3346 18.1792C10.7886 16.731 11.0816 14.9218 12.047 13.7784C12.0658 13.7561 12.0996 13.6978 12.0865 13.6571C11.6439 12.32 12.1833 11.2139 12.2031 11.0965C12.714 11.2476 12.797 10.9445 14.4222 11.9319L14.7031 12.1007C14.8206 12.1707 14.7837 12.1308 14.9012 12.1219C15.5797 11.9376 16.295 11.8358 16.9998 11.8267C17.71 11.8358 18.4207 11.9376 19.1274 12.1294L19.2183 12.1385C19.2104 12.1373 19.243 12.1328 19.2978 12.1001C21.328 10.8704 21.2551 11.2723 21.7995 11.0953C21.8192 11.2128 22.3514 12.3369 21.9135 13.6571C21.8544 13.839 23.6736 15.5048 22.6653 18.1787C22.2533 19.2699 21.2154 20.6517 18.6107 21.0402V21.0408C18.9446 21.5497 19.3457 21.8204 19.3436 22.8702V27C23.7111 25.9447 26.9998 21.687 26.9998 17C27 11.5074 22.4926 7 17 7V7Z"
+                    fill="#84A178" />
                 </svg>
-              </button>
-              <button class="franchise__btn">
-                Franchise<svg
-                  width="7"
-                  height="10"
-                  viewBox="0 0 7 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.96959 0.226914C0.828987 0.36756 0.75 0.558291 0.75 0.757164C0.75 0.956037 0.828987 1.14677 0.96959 1.28741L4.68209 4.99991L0.96959 8.71241C0.832971 8.85387 0.757375 9.04332 0.759084 9.23997C0.760793 9.43661 0.83967 9.62472 0.978726 9.76378C1.11778 9.90283 1.30589 9.98171 1.50254 9.98342C1.69919 9.98513 1.88864 9.90953 2.03009 9.77291L6.27284 5.53016C6.41344 5.38952 6.49243 5.19879 6.49243 4.99991C6.49243 4.80104 6.41344 4.61031 6.27284 4.46966L2.03009 0.226914C1.88944 0.0863108 1.69871 0.00732422 1.49984 0.00732422C1.30097 0.00732422 1.11024 0.0863108 0.96959 0.226914Z"
-                    fill="black"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__inner">
-            <h2 class="footer__title">
-              homemade ice cream made <span>with passion</span>
-            </h2>
-            <div class="footer__contact">
-              <div class="footer__social-icons">
-                <a href="#">
-                  <svg
-                    width="34"
-                    height="34"
-                    viewBox="0 0 34 34"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+              </a>
+              <a href="#">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_10601_122)">
                     <circle cx="17" cy="17" r="17" fill="#F8D24E" />
                     <path
-                      d="M17 7C11.5074 7 7 11.5074 7 17C7 21.687 10.2889 25.9447 14.6562 27V23.6916C14.2235 23.7863 13.8253 23.7891 13.3847 23.6592C12.7938 23.4848 12.3136 23.0912 11.9571 22.4909C11.7299 22.1076 11.3272 21.6919 10.9072 21.7224L10.8042 20.5551C11.7125 20.4773 12.4984 21.1086 12.9648 21.8923C13.172 22.2408 13.4105 22.4451 13.7166 22.5354C14.0125 22.6226 14.3302 22.5807 14.7003 22.45C14.7933 21.7089 15.1328 21.4315 15.3893 21.0408V21.0402C12.7846 20.6517 11.7466 19.2699 11.3346 18.1792C10.7886 16.731 11.0816 14.9218 12.047 13.7784C12.0658 13.7561 12.0996 13.6978 12.0865 13.6571C11.6439 12.32 12.1833 11.2139 12.2031 11.0965C12.714 11.2476 12.797 10.9445 14.4222 11.9319L14.7031 12.1007C14.8206 12.1707 14.7837 12.1308 14.9012 12.1219C15.5797 11.9376 16.295 11.8358 16.9998 11.8267C17.71 11.8358 18.4207 11.9376 19.1274 12.1294L19.2183 12.1385C19.2104 12.1373 19.243 12.1328 19.2978 12.1001C21.328 10.8704 21.2551 11.2723 21.7995 11.0953C21.8192 11.2128 22.3514 12.3369 21.9135 13.6571C21.8544 13.839 23.6736 15.5048 22.6653 18.1787C22.2533 19.2699 21.2154 20.6517 18.6107 21.0402V21.0408C18.9446 21.5497 19.3457 21.8204 19.3436 22.8702V27C23.7111 25.9447 26.9998 21.687 26.9998 17C27 11.5074 22.4926 7 17 7V7Z"
-                      fill="#84A178"
-                    />
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                    width="34"
-                    height="34"
-                    viewBox="0 0 34 34"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_10601_122)">
-                      <circle cx="17" cy="17" r="17" fill="#F8D24E" />
-                      <path
-                        d="M13.6728 19.5238L13.3353 23.9538C13.8181 23.9538 14.0272 23.7602 14.278 23.5278L16.5416 21.5088L21.232 24.7146C22.0922 25.162 22.6983 24.9264 22.9303 23.976L26.0091 10.5116L26.01 10.5108C26.2828 9.32401 25.5501 8.85991 24.712 9.15106L6.61504 15.6175C5.37996 16.0649 5.39866 16.7075 6.40509 16.9987L11.0317 18.3418L21.7786 12.0658C22.2843 11.7532 22.7442 11.9261 22.3659 12.2387L13.6728 19.5238Z"
-                        fill="#84A178"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_10601_122">
-                        <rect width="34" height="34" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                  width="34"
-                  height="34"
-                  viewBox="0 0 34 34"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                      d="M13.6728 19.5238L13.3353 23.9538C13.8181 23.9538 14.0272 23.7602 14.278 23.5278L16.5416 21.5088L21.232 24.7146C22.0922 25.162 22.6983 24.9264 22.9303 23.976L26.0091 10.5116L26.01 10.5108C26.2828 9.32401 25.5501 8.85991 24.712 9.15106L6.61504 15.6175C5.37996 16.0649 5.39866 16.7075 6.40509 16.9987L11.0317 18.3418L21.7786 12.0658C22.2843 11.7532 22.7442 11.9261 22.3659 12.2387L13.6728 19.5238Z"
+                      fill="#84A178" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_10601_122">
+                      <rect width="34" height="34" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_10601_115)">
                     <circle cx="17" cy="17" r="17" fill="#F8D24E" />
                     <path
                       d="M21.7235 16.9804H18.9502V27.2001H14.7484V16.9804H12.75V13.3888H14.7484V11.0646C14.7484 9.40261 15.5333 6.80005 18.9876 6.80005L22.1 6.81315V10.2994H19.8417C19.4713 10.2994 18.9505 10.4856 18.9505 11.2784V13.3922H22.0906L21.7235 16.9804Z"
-                      fill="#84A178"
-                    />
+                      fill="#84A178" />
                   </g>
                   <defs>
                     <clipPath id="clip0_10601_115">
                       <rect width="34" height="34" fill="white" />
                     </clipPath>
                   </defs>
-                </svg>                  
-                </a>
-              </div>
-              <div class="footer__tel">
-                <p>Feel free to contact <a href="tel:+61 (0) 383 766 284">+61 (0) 383 766 284</a></p>
-              </div>
+                </svg>
+              </a>
+            </div>
+            <div class="footer__tel">
+              <p>Feel free to contact <a href="tel:+61 (0) 383 766 284">+61 (0) 383 766 284</a></p>
             </div>
           </div>
         </div>
-        <div class="footer__copyright">
-          <p class="footer__copyright-text">
-            © 2022 - IceCream. All Rights Reserved.
-          </p>
-        </div>
-      </footer>
-    </div>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">
+          © 2022 - IceCream. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </div>
 
-    <script src="js/main.min.js" type="module"></script>
-  </body>
+  <script src="js/main.min.js" type="module"></script>
+</body>
+
 </html>
